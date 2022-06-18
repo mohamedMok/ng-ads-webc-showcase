@@ -11,6 +11,7 @@ export class AppComponent {
   toggleCheck = true;
   checkboxValue = true;
   inputNumber = 99;
+  radioLabel = "Super Default";
   opts = JSON.stringify([
     {
       text: 'Option 1',
@@ -33,6 +34,7 @@ export class AppComponent {
   isLayerOpen = undefined;
   handleToggle() {
     this.toggleCheck = this.toggleCheck === undefined ? true : undefined;
+    this.radioLabel = "Pas si super"; 
     alert('dont tickle me');
   }
   manageLayer() {
@@ -40,6 +42,6 @@ export class AppComponent {
     this.isLayerOpen = !this.isLayerOpen;
   }
   closeLayer() {
-    console.log('Well done, Im closed now')
+    console.log('Well done, Im closed now');
   }
 }
